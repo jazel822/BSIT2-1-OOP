@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Main {
     // Simple data holder for a student
     static class Student {
@@ -29,7 +27,7 @@ public class Main {
 
         boolean exit = false;
         while (!exit) {
-            // Menu
+// Menu
             System.out.println("Student Information System");
             System.out.println("1. Add Student");
             System.out.println("2. View All Students");
@@ -48,7 +46,7 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    // Add Student
+// Add Student
                     if (count >= MAX_STUDENTS) {
                         System.out.println("Cannot add more students. The list is full.");
                         break;
@@ -89,7 +87,7 @@ public class Main {
                     break;
 
                 case 2:
-                    // View All Students
+// View All Students
                     if (count == 0) {
                         System.out.println("No students yet.");
                     } else {
@@ -106,7 +104,7 @@ public class Main {
                     break;
 
                 case 3:
-                    // Search by ID
+// Search by ID
                     if (count == 0) {
                         System.out.println("No students to search.");
                     } else {
@@ -134,7 +132,7 @@ public class Main {
                     break;
 
                 case 4:
-                    // View Statistics
+// View Statistics
                     if (count == 0) {
                         System.out.println("No students to compute statistics.");
                     } else {
@@ -162,7 +160,7 @@ public class Main {
                     break;
 
                 case 5:
-                    // Exit
+// Exit
                     System.out.println("Goodbye!");
                     exit = true;
                     break;
